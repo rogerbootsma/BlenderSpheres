@@ -1,0 +1,179 @@
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical_gray*/
+
+body {
+  margin: 0px;
+}
+
+#header {
+  color: white;
+  width: 100%; /** This solved a big problem with the nav ul li items, take it away and you will see**/
+  top: 0;
+  display: flex;
+  background-color: black;
+  height: 80px;
+  position: fixed; 
+  z-index: 1;
+}
+
+#header-img {
+  margin-left:0px;
+  width: auto;
+  height: 80px;
+}
+
+.titlediv {
+  margin-top: 6px;
+  margin-left: 10px;
+  width: 60vw;
+}
+
+#nav-bar {
+  display:flex;
+  flex-direction: row;
+  justify-items: right;
+  margin-right: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.3em;
+  color: white;
+  width: 35vw;
+  
+  
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #b3e6ff;
+}
+
+.nav-link {
+  display:flex;
+}
+
+
+.maincontainer {  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  margin-top: 130px;
+}
+
+/**https://www.ostraining.com/blog/coding/responsive-videos
+   https://www.labnol.org/internet/light-youtube-embeds/27941/
+/**/
+
+.youtube {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    border: 10px solid black;
+    border-radius: 15px;
+
+  
+}
+.youtube iframe{
+    right:0;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;  
+    position:absolute;
+}
+
+@media (min-width: 1200px) {
+  .youtube{
+    padding-bottom: 38%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+}
+
+
+
+#images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5vw 5vw;
+  
+  
+}
+
+@media only screen and (max-width: 800px) {
+  #images {
+    flex-direction:column;
+    margin: 2vw 2vw;
+    
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .image {
+  width: 28vw;
+  height:auto;
+  margin-top: -20px;
+  
+}
+}
+
+.image {
+  width: 28vw;
+  height:auto;
+  margin: 10px;
+  margin-top: 40px;
+  border: 10px solid black;
+  border-radius: 15px;
+}
+
+.image {
+    width: 88%;
+    height: auto;
+  }
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5vw 5vw;
+  color: white;
+  
+}
+
+.packs {
+  width: 28vw;
+  height:auto;
+  margin: 10px;
+  margin-top: 0px;
+  background-color: black;
+  border: 10px solid black;
+  border-radius: 15px;
+}
+
+.pack {
+  font-size: 1.5em;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
